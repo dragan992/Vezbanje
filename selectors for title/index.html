@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content ~ .title {
+            color: red;
+        }
+
+        /* .content span.title-p {
+            color: green;
+        }
+        .content span#ideja.title-p {
+            color: red !important;
+        } */
+
+        span {
+            color: #ffffb3;
+        }
+
+        .content {
+            background-color: yellow;
+        }
+
+        .content + .title {
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <span class="title-p" id="ideja" style="color: brown !important">this is content title</span>
+        <ul class="list">
+            <li class="list-item">
+                <span class="title">Item 1 title</span>
+                <span class="text">Item 1 text</span>
+            </li>
+            <li class="list-item">
+                <span class="title">Item 2 title</span>
+                <span class="text">Item 2 text</span>
+            </li>
+            <li class="list-item">
+                <span class="title">Item 3 title</span>
+                <span class="text">Item 3 text</span>
+            </li>
+        </ul>
+        <p class="title">ofaba</p>
+        <span class="title">span</span>
+    </div>
+</body>
+</html>
